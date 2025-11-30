@@ -1,0 +1,360 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic); /*!Шрифт всего проекта */
+/*!Сброс стилей */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+
+/*!Сброс стилей */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffc0cb;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fc788e;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  padding: 0 7.1rem;
+  padding-top: 4.1rem;
+}
+
+header .header-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .header-links .header-link {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+header .header-links .header-link a {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 100%;
+  color: #fff;
+  transition: 0.3s linear;
+}
+
+header .header-links .header-link a:hover {
+  color: #ffc0cb;
+}
+
+header .header-links .header-join-us a {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 100%;
+  color: #fff;
+  padding-left: 3rem;
+  transition: 0.3s linear;
+}
+
+header .header-links .header-personal a {
+  display: flex;
+  align-items: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 100%;
+  color: #ffffff;
+  gap: 2.2rem;
+  transition: 0.3s linear;
+}
+
+header .header-links .header-personal a:hover {
+  color: #ffc0cb;
+}
+
+header .header-links .header-join-us a:hover {
+  color: #ffc0cb;
+}
+
+main {
+  padding: 0 7.1rem;
+}
+
+main .body-main-title {
+  padding-top: 4.7rem;
+  padding-bottom: 4.7rem;
+}
+
+main .body-main-title h1 {
+  font-weight: 700;
+  font-size: 10rem;
+  line-height: 100%;
+  color: #fff;
+}
+main .body-main-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.9rem;
+}
+
+main .body-main-content .body-main-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+
+main .body-main-content .body-main-cards .body-main-card-item {
+  background-color: #00000059;
+  border-radius: 2rem;
+  width: 317px;
+  height: 480px;
+  padding: 2.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 13rem;
+  transition: 0.3s linear;
+}
+
+main .body-main-content .body-main-cards .body-main-card-item:hover {
+  transform: scale(1.03);
+}
+
+main .body-main-content .body-main-cards .body-main-card-item p {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 100%;
+  color: #fff;
+}
+
+main .body-main-content .body-main-card-item img {
+  width: 100%;
+}
+
+main .body-main-content .body-main-social-items {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2.5rem;
+}
+
+main .body-main-content .body-main-social-items .body-main-social-item {
+  transition: 0.3s linear;
+}
+
+main .body-main-content .body-main-social-items .body-main-social-item:hover {
+  transform: scale(1.03);
+}
+
+main .body-registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 6.1rem;
+  margin-bottom: 4.1rem;
+}
+
+main .body-registration-container .body-registration-bg {
+  background-color: #00000080;
+  border-radius: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+
+main .body-registration-container .body-registration-bg .body-registration {
+  background-color: #00000099;
+  border-radius: 3rem;
+  padding-top: 5.4rem;
+  padding-bottom: 4.3rem;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+}
+
+main
+  .body-registration-container
+  .body-registration-bg
+  .body-registration
+  button {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 3rem;
+  margin-top: 1rem;
+  padding: 1rem 4rem;
+}
+
+main
+  .body-registration-container
+  .body-registration-bg
+  .body-registration
+  button:hover {
+  background-color: #ffc0cb;
+  color: white;
+}
+
+main
+  .body-registration-container
+  .body-registration-bg
+  .body-registration
+  .buttons {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+main .body-registration-container .body-registration-bg .body-registration h3 {
+  color: #ffffff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 100%;
+  padding-bottom: 6.3rem;
+  text-align: center;
+}
+
+main
+  .body-registration-container
+  .body-registration-bg
+  .body-registration
+  .form-inputs
+  p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 100%;
+  padding-bottom: 1.2rem;
+}
+
+main
+  .body-registration-container
+  .body-registration-bg
+  .body-registration
+  .form-inputs
+  input {
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  width: 370px;
+  height: 65px;
+  margin-bottom: 1.7rem;
+}
+
+main
+  .body-registration-container
+  .body-registration-bg
+  .body-registration
+  .form-inputs
+  .inputCheckBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-bottom: 1px solid white;
+}
+
+main
+  .body-registration-container
+  .body-registration-bg
+  .body-registration
+  .form-inputs
+  .inputCheckBox
+  p {
+  padding: 0;
+}
+
+main
+  .body-registration-container
+  .body-registration-bg
+  .body-registration
+  .form-inputs
+  .inputCheckBox
+  .check {
+  width: auto;
+  margin: 0;
+}
+
+main
+  .body-registration-container
+  .body-registration-bg
+  .body-registration
+  .input-links {
+  margin-top: 1.2rem;
+  justify-content: center;
+  display: flex;
+  gap: 4.8rem;
+}
+
+main
+  .body-registration-container
+  .body-registration-bg
+  .body-registration
+  .input-links
+  a {
+  color: #ffffff;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 100%;
+}
