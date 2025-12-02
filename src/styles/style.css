@@ -57,26 +57,23 @@ h6 {
 
 /*!Сброс стилей */
 
-/* width */
+/* Скролл бар стиль */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #ffc0cb;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #fc788e;
 }
-
+/* Скролл бар стиль */
 body {
   background-repeat: no-repeat;
   background-size: cover;
@@ -208,11 +205,11 @@ main .body-main-content .body-main-social-items .body-main-social-item:hover {
 
 main .body-registration-container {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  height: 100vh;
-  margin-top: 6.1rem;
-  margin-bottom: 4.1rem;
+  padding-top: 4.1rem;
+  max-width: 662px;
+  margin: 0 auto;
 }
 
 main .body-registration-container .body-registration-bg {
@@ -365,6 +362,17 @@ main .body-personal-container {
   max-width: 1114px;
   margin: 0 auto;
   margin-top: 4.1rem;
+}
+
+main
+  .body-registration-container
+  .body-registration-social-container
+  .body-registration-social-items {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 60rem;
+  padding-left: 30rem;
+  gap: 2.5rem;
 }
 
 main .body-personal-container .body-personal-bg {
