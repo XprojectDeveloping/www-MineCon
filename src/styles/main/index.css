@@ -13,7 +13,7 @@ main .body-main-title h1 {
 main .body-main-content {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1.9rem;
+  margin-bottom: 0.8rem;
 }
 
 main .body-main-content .body-main-social-items {

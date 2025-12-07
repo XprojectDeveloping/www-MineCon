@@ -6,23 +6,29 @@ window.addEventListener("load", () => {
     setTimeout(() => {
       html.classList.remove("hidden");
       preLoader.classList.add("hidden");
-    }, 1000);
+    }, 5000);
   } else {
     console.error("Pre-loader element not found");
   }
 });
 
-// let burgerMenuButton = document.querySelector(".burger-button");
-// let burgerMenuNavOpen = document.querySelector(".burger-menu-nav");
-// let burgerMenuNavClosed = document.querySelector(".burger-closed");
+let burgerMenuButton = document.querySelector(".burger-button");
+let burgerMenuNavOpen = document.querySelector(".burger-menu-nav");
+let burgerMenuNavClosed = document.querySelector(".burger-closed");
+let mobileOverlay = document.querySelector(".mobile-overlay");
+let htmlDoc = document.querySelector("html");
 
-// burgerMenuButton.addEventListener("click", () => {
-//   burgerMenuNavOpen.classList.add("open");
-// });
+burgerMenuButton.addEventListener("click", () => {
+  burgerMenuNavOpen.classList.add("open");
+  mobileOverlay.classList.add("active");
+  htmlDoc.classList.add("overflowing");
+});
 
-// burgerMenuNavClosed.addEventListener("click", () => {
-//   burgerMenuNavClosed.classList.remove("open");
-// });
+burgerMenuNavClosed.addEventListener("click", () => {
+  burgerMenuNavOpen.classList.remove("open");
+  mobileOverlay.classList.remove("active");
+  htmlDoc.classList.remove("overflowing");
+});
 
 class MultiCarousel {
   constructor(container) {
@@ -33,12 +39,11 @@ class MultiCarousel {
     this.currentIndex = 0;
     this.slidesToShow = this.getSlidesToShow();
     this.totalSlides = this.slides.length;
-    this.autoplayDelay = 2000;
+    this.autoplayDelay = 5000;
     this.autoplayId = null;
 
     this.startAutoplay();
 
-    // Пересчитываем при ресайзе
     window.addEventListener("resize", () => {
       const newSlidesToShow = this.getSlidesToShow();
       if (newSlidesToShow !== this.slidesToShow) {
@@ -47,12 +52,11 @@ class MultiCarousel {
       }
     });
 
-    // Свайпы
     this.setupSwipe();
   }
 
   getSlidesToShow() {
-    if (window.innerWidth <= 600) return 1;
+    if (window.innerWidth <= 767) return 1;
     if (window.innerWidth <= 900) return 2;
     return 3;
   }
@@ -131,7 +135,6 @@ class MultiCarousel {
   }
 }
 
-// Запуск
 document.addEventListener("DOMContentLoaded", () => {
   const carousel = document.querySelector(".multi-carousel");
   if (carousel) new MultiCarousel(carousel);
