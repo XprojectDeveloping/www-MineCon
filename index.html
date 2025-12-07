@@ -8,14 +8,13 @@
     <meta name="author" content="XPROJECT / XPROJECT_FILES / XPHOENIX_CODE" />
     <link rel="stylesheet" href="./src/styles/style.css" />
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
     <title>MineCon - главная страница</title>
   </head>
   <!-- Фон всего сайта -->
-  <body style="background-image: url(./src/img/body-bg-img.png)">
+  <body
+    style="background-image: url(./src/img/body-bg-img.png)"
+    class="screenWidth"
+  >
     <!-- Шапка сайта -->
     <header>
       <div class="header-links">
@@ -32,55 +31,101 @@
           <a href="javaScript:void()" aria-label="Правила">Правила</a>
           <a href="javaScript:void()" aria-label="Гайды">Гайды</a>
         </nav>
+
         <!-- Ссылка регистрации и входа -->
         <div class="header-join-us">
           <a href="./logon.html" aria-label="Войти">Войти</a>
           <a href="./regist.html" aria-label="Регистрация">Регистрация</a>
         </div>
+        <!-- <div class="burger-menu-con">
+          <img
+            class="burger-button"
+            src="./src/img/burger-menu.svg"
+            alt="burger-menu"
+          />
+          <div class="burger-menu-nav">
+            <nav>
+              <img
+                class="burger-closed"
+                src="./src/img/burger-closed.svg"
+                alt="burger-closed"
+              />
+              <a href="./index.html" aria-label="Главная страница"
+                >Главная страница</a
+              >
+              <a href="javaScript:void()" aria-label="Скачать лаунчер"
+                >Скачать лаунчер</a
+              >
+              <a href="javaScript:void()" aria-label="Новости">Новости</a>
+              <a href="javaScript:void()" aria-label="Магазин">Магазин</a>
+              <a href="javaScript:void()" aria-label="Правила">Правила</a>
+              <a href="javaScript:void()" aria-label="Гайды">Гайды</a>
+            </nav>
+          </div>
+        </div> -->
       </div>
     </header>
     <!-- Тело сайта -->
     <main>
       <div class="body-main-title">
-        <h1>
-          Приключения ждут<br />
-          тебя!
-        </h1>
+        <h1>Приключения ждут тебя!</h1>
       </div>
-      <!--Карточки сайта конейнер -->
+      <!-- Карточки сайта конейнер -->
       <div class="body-main-content">
         <!--Карточки сайта -->
-        <div class="body-main-cards">
-          <a href="./index.html">
-            <div class="body-main-card-item">
-              <p>
-                Как вибраторы чуть<br />
-                не уничтожили<br />
-                королевство
-              </p>
-              <img src="./src/img/card-img.png" alt="card-img" />
+        <div class="multi-carousel">
+          <div class="multi-carousel__track-container">
+            <div class="multi-carousel__track">
+              <div class="multi-carousel__slide">
+                <div class="card">
+                  <p>Как вибраторы чуть не уничтожили королевство</p>
+                  <div class="card-img">
+                    <img src="./src/img/card-img.png" alt="img" />
+                  </div>
+                </div>
+              </div>
+              <div class="multi-carousel__slide">
+                <div class="card">
+                  <p>Как вибраторы чуть не уничтожили королевство</p>
+                  <div class="card-img">
+                    <img src="./src/img/card-img2.png" alt="img" />
+                  </div>
+                </div>
+              </div>
+              <div class="multi-carousel__slide">
+                <div class="card">
+                  <p>Как вибраторы чуть не уничтожили королевство</p>
+                  <div class="card-img">
+                    <img src="./src/img/card-img3.png" alt="img" />
+                  </div>
+                </div>
+              </div>
+              <div class="multi-carousel__slide">
+                <div class="card">
+                  <p>Как вибраторы чуть не уничтожили королевство</p>
+                  <div class="card-img">
+                    <img src="./src/img/card-img.png" alt="img" />
+                  </div>
+                </div>
+              </div>
+              <div class="multi-carousel__slide">
+                <div class="card">
+                  <p>Как вибраторы чуть не уничтожили королевство</p>
+                  <div class="card-img">
+                    <img src="./src/img/card-img2.png" alt="img" />
+                  </div>
+                </div>
+              </div>
+              <div class="multi-carousel__slide">
+                <div class="card">
+                  <p>Как вибраторы чуть не уничтожили королевство</p>
+                  <div class="card-img">
+                    <img src="./src/img/card-img3.png" alt="img" />
+                  </div>
+                </div>
+              </div>
             </div>
-          </a>
-          <a href="./index.html">
-            <div class="body-main-card-item">
-              <p>
-                Как вибраторы чуть<br />
-                не уничтожили<br />
-                королевство
-              </p>
-              <img src="./src/img/card-img2.png" alt="card-img" />
-            </div>
-          </a>
-          <a href="./index.html">
-            <div class="body-main-card-item">
-              <p>
-                Как вибраторы чуть<br />
-                не уничтожили<br />
-                королевство
-              </p>
-              <img src="./src/img/card-img3.png" alt="card-img" />
-            </div>
-          </a>
+          </div>
         </div>
         <!--Иноки социальный сетей -->
         <div class="body-main-social-items">
@@ -103,6 +148,5 @@
       </div>
     </main>
     <script src="./src/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
