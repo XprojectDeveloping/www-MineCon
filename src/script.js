@@ -1,3 +1,17 @@
+const html = document.querySelector("html");
+html.classList.add("hidden");
+window.addEventListener("load", () => {
+  const preLoader = document.querySelector(".pre-loader");
+  if (preLoader) {
+    setTimeout(() => {
+      html.classList.remove("hidden");
+      preLoader.classList.add("hidden");
+    }, 1000);
+  } else {
+    console.error("Pre-loader element not found");
+  }
+});
+
 // let burgerMenuButton = document.querySelector(".burger-button");
 // let burgerMenuNavOpen = document.querySelector(".burger-menu-nav");
 // let burgerMenuNavClosed = document.querySelector(".burger-closed");

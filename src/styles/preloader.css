@@ -1,0 +1,51 @@
+html.hidden {
+  overflow: hidden;
+}
+.pre-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  transition: 0.3s linear;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(15px);
+  z-index: 100;
+}
+.pre-loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.pre-loader .loader {
+  height: 150px; /* Увеличен размер для изображения */
+  width: 150px;
+  border-radius: 50%;
+  background: url("../../src/img/pony.png") no-repeat center center; /* Заменено на изображение пони */
+  background-size: contain; /* Масштабирование изображения */
+  position: relative;
+  animation: spin 1.5s linear infinite; /* Добавлена анимация вращения */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pre-loader .loader:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  animation: l2 1.5s linear infinite;
+}
+@keyframes l2 {
+  to {
+    rotate: 1turn;
+  }
+}

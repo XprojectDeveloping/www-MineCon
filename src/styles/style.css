@@ -1,3 +1,4 @@
+@import url("./preloader.css");
 @import url("./cssReset.css");
 @import url("./caroulsel.css");
 @import url("./burgermenu.css");
@@ -6,7 +7,6 @@
 @import url("./main/registration.css");
 @import url("./main/personal.css");
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic); /*!Шрифт всего проекта */
-@import url(./response.css);
 
 body {
   background-repeat: no-repeat;
@@ -16,3 +16,17 @@ body {
 main {
   padding: 0 7.1rem;
 }
+
+@media screen and (min-width: 1999px) {
+  body.screenWidth {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+}
+
+@media (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
+}
+  
