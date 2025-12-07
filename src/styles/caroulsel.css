@@ -25,7 +25,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 7rem;
   background-color: #00000059;
   border-radius: 16px;
   overflow: hidden;

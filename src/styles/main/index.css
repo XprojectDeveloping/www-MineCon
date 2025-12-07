@@ -1,0 +1,31 @@
+main .body-main-title {
+  padding-top: 4.7rem;
+  padding-bottom: 4.7rem;
+}
+
+main .body-main-title h1 {
+  font-weight: 700;
+  font-size: 10rem;
+  line-height: 100%;
+  color: #fff;
+}
+
+main .body-main-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.9rem;
+}
+
+main .body-main-content .body-main-social-items {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2.5rem;
+}
+
+main .body-main-content .body-main-social-items .body-main-social-item {
+  transition: 0.3s linear;
+}
+
+main .body-main-content .body-main-social-items .body-main-social-item:hover {
+  transform: scale(1.03);
+}

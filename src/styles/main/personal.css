@@ -1,0 +1,98 @@
+main .body-personal-container {
+  max-width: 1114px;
+  margin: 0 auto;
+  margin-top: 4.1rem;
+}
+
+main .body-personal-container .body-personal-bg {
+  background-color: #00000080;
+  border-radius: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 9.5rem;
+}
+
+main .body-personal-container .body-personal-bg .body-personal-skin-con p {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: 2.4rem;
+  color: #ffffff;
+  line-height: 100%;
+}
+
+main
+  .body-personal-container
+  .body-personal-bg
+  .body-personal-skin-con
+  .body-personal-skin {
+  background-color: #00000099;
+  border-radius: 3rem;
+  width: 435px;
+  height: 344px;
+}
+
+main
+  .body-personal-container
+  .body-personal-bg
+  .body-personal-password-change-con
+  p {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: 2.4rem;
+  color: #ffffff;
+  line-height: 100%;
+}
+
+main
+  .body-personal-container
+  .body-personal-bg
+  .body-personal-password-change-con {
+  display: flex;
+  flex-direction: column;
+}
+
+main
+  .body-personal-container
+  .body-personal-bg
+  .body-personal-password-change-con
+  .body-personal-password-change {
+  background-color: #00000099;
+  border-radius: 3rem;
+  width: 434px;
+  height: 443px;
+}
+
+main
+  .body-personal-container
+  .body-personal-bg
+  .body-personal-password-change-con
+  .body-personal-password-change
+  .form-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2.8rem;
+}
+
+main
+  .body-personal-container
+  .body-personal-bg
+  .body-personal-password-change-con
+  .body-personal-password-change
+  .form-inputs
+  input {
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  width: 370px;
+  height: 65px;
+  margin-bottom: 1.7rem;
+  text-align: center;
+  font-size: 1.9rem;
+}

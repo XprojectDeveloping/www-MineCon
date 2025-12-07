@@ -1,0 +1,60 @@
+header {
+  padding: 0 7.1rem;
+  padding-top: 4.1rem;
+}
+
+header .header-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .header-links .header-link {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+header .header-links .header-link a {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 100%;
+  color: #fff;
+  transition: 0.3s linear;
+}
+
+header .header-links .header-link a:hover {
+  color: #ffc0cb;
+}
+
+header .header-links .header-join-us {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+header .header-links .header-join-us a {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 100%;
+  color: #fff;
+  transition: 0.3s linear;
+}
+
+header .header-links .header-personal a {
+  display: flex;
+  align-items: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 100%;
+  color: #ffffff;
+  gap: 2.2rem;
+  transition: 0.3s linear;
+}
+
+header .header-links .header-personal a:hover {
+  color: #ffc0cb;
+}
+
+header .header-links .header-join-us a:hover {
+  color: #ffc0cb;
+}

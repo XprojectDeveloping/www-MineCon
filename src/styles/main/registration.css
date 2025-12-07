@@ -1,0 +1,165 @@
+main .body-registration-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 4.1rem;
+  max-width: 662px;
+  margin: 0 auto;
+}
+
+main .body-registration-container .body-registration-bg {
+  background-color: #00000080;
+  border-radius: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+
+main .body-registration-container .body-registration-bg .body-registration {
+  background-color: #00000099;
+  border-radius: 3rem;
+  padding-top: 5.4rem;
+  padding-bottom: 4.3rem;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+}
+
+main
+  .body-registration-container
+  .body-registration-bg
+  .body-registration
+  button {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 3rem;
+  margin-top: 1rem;
+  padding: 1rem 4rem;
+}
+
+main
+  .body-registration-container
+  .body-registration-bg
+  .body-registration
+  button:hover {
+  background-color: #ffc0cb;
+  color: white;
+}
+
+main
+  .body-registration-container
+  .body-registration-bg
+  .body-registration
+  .buttons {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+main .body-registration-container .body-registration-bg .body-registration h3 {
+  color: #ffffff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 100%;
+  padding-bottom: 6.3rem;
+  text-align: center;
+}
+
+main
+  .body-registration-container
+  .body-registration-bg
+  .body-registration
+  .form-inputs
+  p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 100%;
+  padding-bottom: 1.2rem;
+}
+
+main
+  .body-registration-container
+  .body-registration-bg
+  .body-registration
+  .form-inputs
+  input {
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  width: 370px;
+  height: 65px;
+  margin-bottom: 1.7rem;
+  text-align: center;
+  font-size: 1.9rem;
+}
+
+main
+  .body-registration-container
+  .body-registration-bg
+  .body-registration
+  .form-inputs
+  .inputCheckBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-bottom: 1px solid white;
+}
+
+main
+  .body-registration-container
+  .body-registration-bg
+  .body-registration
+  .form-inputs
+  .inputCheckBox
+  p {
+  padding: 0;
+}
+
+main
+  .body-registration-container
+  .body-registration-bg
+  .body-registration
+  .form-inputs
+  .inputCheckBox
+  .check {
+  width: auto;
+  margin: 0;
+}
+
+main
+  .body-registration-container
+  .body-registration-bg
+  .body-registration
+  .input-links {
+  margin-top: 1.2rem;
+  justify-content: center;
+  display: flex;
+  gap: 4.8rem;
+}
+
+main
+  .body-registration-container
+  .body-registration-bg
+  .body-registration
+  .input-links
+  a {
+  color: #ffffff;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+main
+  .body-registration-container
+  .body-registration-social-container
+  .body-registration-social-items {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 60rem;
+  padding-left: 30rem;
+  gap: 2.5rem;
+}
