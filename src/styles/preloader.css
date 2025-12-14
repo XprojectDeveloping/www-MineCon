@@ -20,32 +20,8 @@ html.hidden {
   visibility: hidden;
 }
 .pre-loader .loader {
-  height: 150px; /* Увеличен размер для изображения */
+  height: 150px;
   width: 150px;
-  border-radius: 50%;
-  background: url("../../src/img/pony.png") no-repeat center center; /* Заменено на изображение пони */
-  background-size: contain; /* Масштабирование изображения */
-  position: relative;
-  animation: spin 1.5s linear infinite; /* Добавлена анимация вращения */
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.pre-loader .loader:before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  animation: l2 1.5s linear infinite;
-}
-@keyframes l2 {
-  to {
-    rotate: 1turn;
-  }
+  background: url("../../src/img/PonyRun.gif") no-repeat center center;
+  background-size: contain;
 }

@@ -1,6 +1,5 @@
 main .body-main-title {
-  padding-top: 4.7rem;
-  padding-bottom: 4.7rem;
+  margin-top: 4.7rem;
 }
 
 main .body-main-title h1 {
@@ -13,7 +12,7 @@ main .body-main-title h1 {
 main .body-main-content {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.8rem;
+  margin-top: 8rem;
 }
 
 main .body-main-content .body-main-social-items {

@@ -1,7 +1,6 @@
 @import url("./preloader.css");
 @import url("./cssReset.css");
 @import url("./caroulsel.css");
-@import url("./burgermenu.css");
 @import url("./header/header.css");
 @import url("./main/index.css");
 @import url("./main/registration.css");
@@ -17,28 +16,8 @@ body {
   background-size: cover;
 }
 
-header {
-  padding: 0 7.1rem;
-  padding-top: 4.1rem;
-}
-
 main {
   padding: 0 7.1rem;
-}
-
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  background: #000;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #fff;
-  margin: 0;
-  padding: 0;
 }
 
 .swiper {
@@ -47,23 +26,46 @@ body {
 }
 
 @media screen and (min-width: 1999px) {
-  body.screenWidth {
-    max-width: 1320px;
-    margin: 0 auto;
-  }
 }
 
 @media screen and (max-width: 1299px) {
+  body {
+    min-height: 100vh;
+  }
   header {
-    padding: 0 4.1rem;
-    padding-top: 4.1rem;
+    margin: 3.1rem 3.1rem 0;
+  }
+
+  header .header-links .header-link {
+    gap: 2rem;
+  }
+
+  header .header-links .header-link a {
+    font-size: 1.8rem;
+  }
+
+  header .header-links .header-join-us a {
+    font-size: 1.8rem;
   }
   main {
     padding: 0 4.1rem;
   }
 
+  main .body-main-content {
+    flex-direction: column;
+  }
+  main .body-main-content .body-main-social-items {
+    margin-top: 3rem;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   main .body-registration-container {
     flex-direction: column;
+  }
+
+  main .body-main-title h1 {
+    font-size: 6.5rem;
   }
 
   main
@@ -79,12 +81,12 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-  header {
-    padding: 0 2.1rem;
-    padding-top: 3.1rem;
-  }
   main {
     padding: 0 3.2rem;
+  }
+
+  main .body-main-title {
+    margin-top: 2.7rem;
   }
 
   html.overflowing {
@@ -163,6 +165,7 @@ body {
 
   main .body-main-content {
     flex-direction: column;
+    margin-top: 3rem;
   }
 
   main .body-main-content .body-main-social-items {
@@ -177,8 +180,64 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  main .body-registration-container .body-registration-bg {
+    padding: 3rem;
+  }
+
+  main .body-registration-container .body-registration-bg .body-registration {
+    padding: 3rem;
+  }
+
+  main
+    .body-registration-container
+    .body-registration-bg
+    .body-registration
+    h3 {
+    padding-bottom: 3.6rem;
+  }
+
   main .body-main-title h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+  }
+  main
+    .body-registration-container
+    .body-registration-bg
+    .body-registration
+    h3 {
+    font-size: 1.5rem;
+  }
+
+  main
+    .body-registration-container
+    .body-registration-bg
+    .body-registration
+    .form-inputs
+    p {
+    font-size: 1.5rem;
+  }
+
+  main
+    .body-registration-container
+    .body-registration-bg
+    .body-registration
+    .form-inputs
+    input {
+    width: 100%;
+    height: 3rem;
+    font-size: 1.2rem;
+  }
+
+  main
+    .body-registration-container
+    .body-registration-bg
+    .body-registration
+    .input-links
+    a {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1.8rem;
   }
 }
 
