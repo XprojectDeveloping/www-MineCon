@@ -8,17 +8,14 @@
 .card {
   display: flex;
   flex-direction: column;
-  gap: 7rem;
+  justify-content: space-between;
+  gap: 6rem;
   background-color: #00000059;
   border-radius: 16px;
   overflow: hidden;
   transition: transform 0.3s;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  display: flex;
   padding: 2.2rem;
-  cursor: pointer;
+  height: 100%;
 }
 
 .card p {
