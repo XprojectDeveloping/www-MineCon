@@ -22,6 +22,6 @@ html.hidden {
 .pre-loader .loader {
   height: 150px;
   width: 150px;
-  background: url("../../src/img/PonyRun.gif") no-repeat center center;
+  background: url("../src/img/PonyRun.gif") no-repeat center center;
   background-size: contain;
 }
