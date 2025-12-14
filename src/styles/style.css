@@ -26,6 +26,26 @@ main {
   padding: 0 7.1rem;
 }
 
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #000;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  margin-left: inherit !important;
+  margin-right: inherit !important;
+}
+
 @media screen and (min-width: 1999px) {
   body.screenWidth {
     max-width: 1320px;
@@ -165,5 +185,5 @@ main {
 @media screen and (max-width: 560px) {
 }
 
-@media screen and (max-width: 380) {
+@media screen and (max-width: 380px) {
 }

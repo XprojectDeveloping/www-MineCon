@@ -3,22 +3,7 @@
   max-width: 1000px;
   overflow: hidden;
   border-radius: 16px;
-}
-
-.multi-carousel__track-container {
-  overflow: hidden;
-}
-
-.multi-carousel__track {
-  display: flex;
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  gap: 16px;
-  user-select: none;
-}
-
-.multi-carousel__slide {
-  flex: 0 0 calc(33.333% - 11px);
-  min-width: 0;
+  margin-top: 5rem;
 }
 
 .card {
@@ -44,17 +29,13 @@
   line-height: 100%;
 }
 
-.card:hover {
-  transform: scale(1.03);
-}
-
 .card .card-img img {
   width: 100%;
   object-fit: cover;
   height: 100%;
 }
 
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
   .multi-carousel__slide {
     flex: 0 0 calc(50% - 8px);
   }
@@ -91,4 +72,4 @@
     gap: 4px;
     padding: 4px;
   }
-}
+} */
