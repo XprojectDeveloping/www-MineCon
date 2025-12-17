@@ -1,7 +1,8 @@
 main .body-personal-container {
-  max-width: 1114px;
+  max-width: 1200px;
   margin: 0 auto;
   margin-top: 4.1rem;
+  margin-bottom: 4.1rem;
 }
 
 main .body-personal-container .body-personal-bg {
@@ -95,4 +96,28 @@ main
   margin-bottom: 1.7rem;
   text-align: center;
   font-size: 1.9rem;
+}
+
+main .body-personal-container .body-personal-password-change-button {
+  display: flex;
+  justify-content: center;
+}
+
+main .body-personal-container .body-personal-password-change-button button {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 3rem;
+  padding: 1rem 4rem;
+  transition: 0.3s linear;
+  margin-top: 1rem;
+}
+
+main
+  .body-personal-container
+  .body-personal-password-change-button
+  button:hover {
+  background-color: #ffc0cb;
+  color: white;
 }

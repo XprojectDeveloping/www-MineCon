@@ -94,6 +94,10 @@ main {
     overflow-y: hidden;
   }
 
+  header {
+    margin: 3.2rem 3.2rem 0;
+  }
+
   header .header-links .header-link {
     display: none;
   }
@@ -164,6 +168,46 @@ main {
     color: hotpink;
   }
 
+  header .header-links .header-personal a {
+    font-size: 1.8rem;
+  }
+
+  header .header-links .header-personal img {
+    max-width: 5rem;
+  }
+
+  main .body-personal-container .body-personal-bg {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  main
+    .body-personal-container
+    .body-personal-bg
+    .body-personal-password-change-con
+    .body-personal-password-change
+    .form-inputs
+    input {
+    height: 47px;
+  }
+
+  main
+    .body-personal-container
+    .body-personal-bg
+    .body-personal-password-change-con
+    p {
+    font-size: 1.2rem;
+  }
+
+  .body-personal-skin-con {
+    display: none;
+  }
+
   main .body-main-content {
     flex-direction: column;
     margin-top: 3rem;
@@ -181,6 +225,14 @@ main {
 }
 
 @media screen and (max-width: 767px) {
+  header {
+    margin: 1.2rem 1.2rem 0;
+  }
+
+  main {
+    padding: 0 1.2rem;
+  }
+
   main .body-registration-container .body-registration-bg {
     padding: 3rem;
   }
@@ -239,6 +291,25 @@ main {
 
   p {
     font-size: 1.8rem;
+  }
+
+  main
+    .body-personal-container
+    .body-personal-bg
+    .body-personal-password-change-con
+    .body-personal-password-change
+    .form-inputs
+    input {
+    width: 200px;
+  }
+
+  main
+    .body-personal-container
+    .body-personal-bg
+    .body-personal-password-change-con
+    .body-personal-password-change {
+    width: 300px;
+    height: 350px;
   }
 }
 

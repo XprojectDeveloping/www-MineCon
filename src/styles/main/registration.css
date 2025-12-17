@@ -3,6 +3,7 @@ main .body-registration-container {
   flex-direction: row;
   align-items: center;
   padding-top: 4.1rem;
+  padding-bottom: 4.1rem;
   max-width: 572px;
   margin: 0 auto;
 }

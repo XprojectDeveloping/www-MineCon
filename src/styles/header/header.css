@@ -5,6 +5,7 @@ header {
 header .header-links {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 header .header-links .header-link {
@@ -49,6 +50,7 @@ header .header-links .header-personal a {
   gap: 2.2rem;
   transition: 0.3s linear;
 }
+
 
 header .header-links .header-personal a:hover {
   color: #ffc0cb;

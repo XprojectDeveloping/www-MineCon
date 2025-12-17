@@ -4,9 +4,18 @@ main .body-main-title {
 
 main .body-main-title h1 {
   font-weight: 700;
-  font-size: 10rem;
+  font-size: 8rem;
   line-height: 100%;
   color: #fff;
+  margin-bottom: 2.5rem;
+}
+
+main .body-main-title p {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 100%;
+  color: #fff;
+  margin-bottom: 3rem;
 }
 
 main .body-main-content {
@@ -27,4 +36,34 @@ main .body-main-content .body-main-social-items .body-main-social-item {
 
 main .body-main-content .body-main-social-items .body-main-social-item:hover {
   transform: scale(1.03);
+}
+
+/* BUTTON CSS */
+
+.pushable {
+  background: #2e9635;
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  outline: none;
+}
+
+.pushable:hover {
+  background: #34bd37;
+}
+.front {
+  display: block;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 2rem;
+  font-weight: 700;
+  background: #9bd25a;
+  color: white;
+  transform: translateY(-6px);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
 }
