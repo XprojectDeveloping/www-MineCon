@@ -1,3 +1,4 @@
+/* Основной контейнер карусели */
 .multi-carousel {
   position: relative;
   max-width: 1000px;
@@ -5,6 +6,7 @@
   border-radius: 16px;
 }
 
+/* Карточка внутри карусели */
 .card {
   display: flex;
   flex-direction: column;
@@ -18,6 +20,7 @@
   height: 100%;
 }
 
+/* Текст внутри карточки */
 .card p {
   color: #ffffff;
   font-size: 2.4rem;
@@ -25,47 +28,9 @@
   line-height: 100%;
 }
 
+/* Изображение внутри карточки */
 .card .card-img img {
   width: 100%;
   object-fit: cover;
   height: 100%;
 }
-
-/* @media screen and (max-width: 992px) {
-  .multi-carousel__slide {
-    flex: 0 0 calc(50% - 8px);
-  }
-  .multi-carousel__track {
-    gap: 12px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .multi-carousel__slide {
-    flex: 0 0 calc(50% - 16px);
-  }
-  .multi-carousel__track {
-    gap: 10px;
-    padding: 10px;
-  }
-}
-
-@media screen and (max-width: 560px) {
-  .multi-carousel__slide {
-    flex: 0 0 calc(50% - 12px);
-  }
-  .multi-carousel__track {
-    gap: 10px;
-    padding: 6px;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .multi-carousel__slide {
-    flex: 0 0 100%;
-  }
-  .multi-carousel__track {
-    gap: 4px;
-    padding: 4px;
-  }
-} */

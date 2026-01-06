@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Метаданные страницы -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Приключения ждут тебя!" />
     <meta name="keywords" content="Minecraft survival" />
     <meta name="author" content="XPROJECT / XPROJECT_FILES / XPHOENIX_CODE" />
+
+    <!-- Подключение стилей -->
     <link rel="stylesheet" href="./src/styles/style.css" />
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
+
     <title>MineCon - главная страница</title>
   </head>
+
   <!-- Фон всего сайта -->
   <body
     style="
@@ -22,13 +27,15 @@
       background-size: cover;
     "
   >
+    <!-- Прелоадер -->
     <div class="pre-loader">
       <div class="loader"></div>
     </div>
+
     <!-- Шапка сайта -->
     <header>
       <div class="header-links">
-        <!-- Сылки для шапки -->
+        <!-- Основные ссылки в шапке -->
         <nav class="header-link">
           <a href="./index.html" aria-label="Главная страница"
             >Главная страница</a
@@ -42,12 +49,13 @@
           <a href="javaScript:void()" aria-label="Гайды">Гайды</a>
         </nav>
 
-        <!-- Ссылка регистрации и входа -->
+        <!-- Ссылки для входа и регистрации -->
         <div class="header-join-us">
           <a href="./logon.html" aria-label="Войти">Войти</a>
           <a href="./regist.html" aria-label="Регистрация">Регистрация</a>
         </div>
 
+        <!-- Бургер-меню для мобильных устройств -->
         <div class="burger-menu-con">
           <div class="mobile-overlay"></div>
           <button class="burger-button">
@@ -75,21 +83,26 @@
         </div>
       </div>
     </header>
-    <!-- Тело сайта -->
+
+    <!-- Основной контент страницы -->
     <main>
+      <!-- Заголовок и описание -->
       <div class="body-main-title">
         <h1>Приключения ждут тебя!</h1>
         <p>Уникальный сервер с квестами экономикой и живым миром</p>
 
+        <!-- Кнопка для начала игры -->
         <button class="pushable">
           <span class="front">Начать игру</span>
         </button>
       </div>
-      <!-- Карточки сайта конейнер -->
+
+      <!-- Контейнер для карточек -->
       <div class="body-main-content">
-        <!--Карточки сайта -->
+        <!-- Карусель карточек -->
         <div class="swiper mySwiper multi-carousel">
           <div class="swiper-wrapper multi-carousel__track">
+            <!-- Карточка 1 -->
             <div class="swiper-slide multi-carousel__slide">
               <div class="card">
                 <p>Как вибраторы чуть не уничтожили королевство</p>
@@ -98,6 +111,7 @@
                 </div>
               </div>
             </div>
+            <!-- Карточка 2 -->
             <div class="swiper-slide multi-carousel__slide">
               <div class="card">
                 <p>Инфляция носочков в Эквестрии ложь?</p>
@@ -106,6 +120,7 @@
                 </div>
               </div>
             </div>
+            <!-- Карточка 3 -->
             <div class="swiper-slide multi-carousel__slide">
               <div class="card">
                 <p>Как вибраторы чуть не уничтожили королевство</p>
@@ -114,6 +129,7 @@
                 </div>
               </div>
             </div>
+            <!-- Карточка 4 -->
             <div class="swiper-slide multi-carousel__slide">
               <div class="card">
                 <p>
@@ -124,6 +140,7 @@
                 </div>
               </div>
             </div>
+            <!-- Карточка 5 -->
             <div class="swiper-slide multi-carousel__slide">
               <div class="card">
                 <p>Инфляция носочков в Эквестрии ложь?</p>
@@ -132,6 +149,7 @@
                 </div>
               </div>
             </div>
+            <!-- Карточка 6 -->
             <div class="swiper-slide multi-carousel__slide">
               <div class="card">
                 <p>
@@ -144,7 +162,8 @@
             </div>
           </div>
         </div>
-        <!--Иноки социальный сетей -->
+
+        <!-- Ссылки на социальные сети -->
         <div class="body-main-social-items">
           <div class="body-main-social-item">
             <a href="javaScript:void()">
@@ -164,6 +183,8 @@
         </div>
       </div>
     </main>
+
+    <!-- Подключение скриптов -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./src/script.js"></script>
   </body>

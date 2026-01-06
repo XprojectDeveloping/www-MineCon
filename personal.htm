@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Метаданные страницы -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Приключения ждут тебя!" />
     <meta name="keywords" content="Minecraft survival" />
     <meta name="author" content="XPROJECT / XPROJECT_FILES / XPHOENIX_CODE" />
+
+    <!-- Подключение стилей -->
     <link rel="stylesheet" href="./src/styles/style.css" />
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+
     <title>MineCon - главная страница</title>
   </head>
+
+  <!-- Фон всего сайта -->
   <body
     style="
       background-image: url(./src/img/body-bg-img2.png);
@@ -17,13 +23,15 @@
       background-size: cover;
     "
   >
+    <!-- Прелоадер -->
     <div class="pre-loader">
       <div class="loader"></div>
     </div>
+
     <!-- Шапка сайта -->
     <header>
       <div class="header-links">
-        <!-- Сылки для шапки -->
+        <!-- Основные ссылки в шапке -->
         <div class="header-link">
           <a href="./index.html">Главная страница</a>
           <a href="javaScript:void()">Скачать лаунчер</a>
@@ -32,7 +40,8 @@
           <a href="javaScript:void()">Правила</a>
           <a href="javaScript:void()">Гайды</a>
         </div>
-        <!-- Ссылка регистрации и входа -->
+
+        <!-- Ссылка на личный кабинет -->
         <div class="header-personal">
           <a href="javaScript:void()"
             >Личный<br />
@@ -41,6 +50,7 @@
           </a>
         </div>
 
+        <!-- Бургер-меню для мобильных устройств -->
         <div class="burger-menu-con">
           <div class="mobile-overlay"></div>
           <button class="burger-button">
@@ -68,27 +78,38 @@
         </div>
       </div>
     </header>
-    <!-- Тело сайта -->
+
+    <!-- Основной контент страницы -->
     <main>
       <div class="body-personal-container">
         <div class="body-personal-bg">
+          <!-- Блок отображения скина пользователя -->
           <div class="body-personal-skin-con">
             <p>Ваш скин</p>
             <div class="body-personal-skin"></div>
           </div>
+
+          <!-- Блок смены пароля -->
           <div class="body-personal-password-change-con">
             <p>Смена пароля</p>
 
             <div class="body-personal-password-change">
               <div class="form-inputs">
+                <!-- Поле ввода логина -->
                 <p>Логин</p>
                 <input type="text" />
+
+                <!-- Поле ввода нового пароля -->
                 <p>Пароль</p>
                 <input type="password" />
+
+                <!-- Поле подтверждения нового пароля -->
                 <p>Повторите Пароль</p>
                 <input type="password" />
               </div>
             </div>
+
+            <!-- Кнопка для смены пароля -->
             <div class="body-personal-password-change-button">
               <button>Сменить пароль</button>
             </div>
@@ -96,6 +117,8 @@
         </div>
       </div>
     </main>
+
+    <!-- Подключение скриптов -->
     <script src="./src/script.js"></script>
   </body>
 </html>

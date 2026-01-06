@@ -1,19 +1,23 @@
+/* Основной контейнер шапки */
 header {
   margin: 4.1rem 7.1rem 0;
 }
 
+/* Контейнер для ссылок в шапке */
 header .header-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Ссылки в шапке */
 header .header-links .header-link {
   display: flex;
   align-items: center;
   gap: 3rem;
 }
 
+/* Стили для ссылок */
 header .header-links .header-link a {
   font-weight: 700;
   font-size: 2rem;
@@ -22,16 +26,19 @@ header .header-links .header-link a {
   transition: 0.3s linear;
 }
 
+/* Ховер-эффект для ссылок */
 header .header-links .header-link a:hover {
   color: #ffc0cb;
 }
 
+/* Контейнер для ссылок "Войти" и "Регистрация" */
 header .header-links .header-join-us {
   display: flex;
   align-items: center;
   gap: 3rem;
 }
 
+/* Стили для ссылок "Войти" и "Регистрация" */
 header .header-links .header-join-us a {
   font-weight: 700;
   font-size: 2rem;
@@ -40,6 +47,7 @@ header .header-links .header-join-us a {
   transition: 0.3s linear;
 }
 
+/* Стили для ссылки "Личный кабинет" */
 header .header-links .header-personal a {
   display: flex;
   align-items: center;
@@ -51,15 +59,17 @@ header .header-links .header-personal a {
   transition: 0.3s linear;
 }
 
-
+/* Ховер-эффект для ссылки "Личный кабинет" */
 header .header-links .header-personal a:hover {
   color: #ffc0cb;
 }
 
+/* Ховер-эффект для ссылок "Войти" и "Регистрация" */
 header .header-links .header-join-us a:hover {
   color: #ffc0cb;
 }
 
+/* Контейнер для бургер-меню (по умолчанию скрыт) */
 header .header-links .burger-menu-con {
   display: none;
 }

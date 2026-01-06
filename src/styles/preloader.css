@@ -1,6 +1,9 @@
+/* Отключение прокрутки страницы при активном прелоадере */
 html.hidden {
   overflow: hidden;
 }
+
+/* Основной контейнер прелоадера */
 .pre-loader {
   display: flex;
   justify-content: center;
@@ -15,10 +18,14 @@ html.hidden {
   backdrop-filter: blur(15px);
   z-index: 100;
 }
+
+/* Скрытие прелоадера */
 .pre-loader.hidden {
   opacity: 0;
   visibility: hidden;
 }
+
+/* Анимация загрузки */
 .pre-loader .loader {
   height: 150px;
   width: 150px;

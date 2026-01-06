@@ -1,3 +1,4 @@
+/* Сброс отступов и боксовой модели для всех элементов */
 *,
 *::before,
 *::after {
@@ -6,15 +7,18 @@
   box-sizing: border-box;
 }
 
+/* Базовый размер шрифта и плавное поведение прокрутки */
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
+/* Основной шрифт для тела страницы */
 body {
   font-family: "Inter", sans-serif;
 }
 
+/* Сброс стилей для списков */
 ul,
 li {
   list-style: none;
@@ -22,11 +26,13 @@ li {
   margin: 0;
 }
 
+/* Сброс стилей для абзацев */
 p {
   margin: 0;
   padding: 0;
 }
 
+/* Сброс стилей для ссылок */
 a {
   color: black;
   text-decoration: none;
@@ -34,6 +40,7 @@ a {
   margin: 0;
 }
 
+/* Сброс стилей для заголовков */
 h1,
 h2,
 h3,
@@ -45,20 +52,22 @@ h6 {
   font-weight: normal;
 }
 
-/* Скролл бар стиль */
+/* Стили для полосы прокрутки */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
+/* Фон трека полосы прокрутки */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
+/* Цвет полосы прокрутки */
 ::-webkit-scrollbar-thumb {
   background: #ffc0cb;
 }
 
+/* Цвет полосы прокрутки при наведении */
 ::-webkit-scrollbar-thumb:hover {
   background: #fc788e;
 }
-/* Скролл бар стиль */

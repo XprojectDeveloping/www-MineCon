@@ -1,3 +1,4 @@
+/* Импорт стилей и шрифтов */
 @import url("./preloader.css");
 @import url("./cssReset.css");
 @import url("./caroulsel.css");
@@ -7,68 +8,81 @@
 @import url("./main/personal.css");
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic); /*!Шрифт всего проекта */
 
-/* * {
-  border: 1px solid red;
-} */
-
+/* Основные стили для body */
 body {
   background-repeat: no-repeat;
   background-size: cover;
   font-display: swap;
 }
 
+/* Основные стили для main */
 main {
   padding: 0 7.1rem;
 }
 
+/* Стили для swiper */
 .swiper {
   margin-left: inherit !important;
   margin-right: inherit !important;
 }
 
-@media screen and (min-width: 1999px) {
-}
+/* Медиа-запросы для адаптивности */
 
+/* Экран до 1299px (ноутбуки и планшеты в альбомной ориентации) */
 @media screen and (max-width: 1299px) {
+  /* Устанавливаем минимальную высоту для body */
   body {
     min-height: 100vh;
   }
+
+  /* Устанавливаем отступы для header */
   header {
     margin: 3.1rem 3.1rem 0;
   }
 
+  /* Устанавливаем расстояние между ссылками в header */
   header .header-links .header-link {
     gap: 2rem;
   }
 
+  /* Уменьшаем размер шрифта для ссылок в header */
   header .header-links .header-link a {
     font-size: 1.8rem;
   }
 
+  /* Уменьшаем размер шрифта для кнопки "Присоединяйтесь к нам" */
   header .header-links .header-join-us a {
     font-size: 1.8rem;
   }
+
+  /* Уменьшаем отступы для main */
   main {
     padding: 0 4.1rem;
   }
 
+  /* Переключаем flex-ориентацию для основного контента */
   main .body-main-content {
     flex-direction: column;
   }
+
+  /* Центрируем элементы социальных сетей */
   main .body-main-content .body-main-social-items {
     margin-top: 3rem;
     flex-direction: row;
     justify-content: center;
   }
 
+  /* Переключаем flex-ориентацию для контейнера регистрации */
   main .body-registration-container {
     flex-direction: column;
   }
 
+  /* Уменьшаем размер заголовка в main */
   main .body-main-title h1 {
     font-size: 6.5rem;
   }
 
+  /* Настраиваем отступы и ориентацию для социальных кнопок в регистрации */
   main
     .body-registration-container
     .body-registration-social-container
@@ -81,37 +95,46 @@ main {
   }
 }
 
+/* Экран до 992px (планшеты в портретной ориентации) */
 @media screen and (max-width: 992px) {
+  /* Уменьшаем отступы для main */
   main {
     padding: 0 3.2rem;
   }
 
+  /* Устанавливаем верхний отступ для заголовка */
   main .body-main-title {
     margin-top: 2.7rem;
   }
 
+  /* Отключаем вертикальную прокрутку для html */
   html.overflowing {
     overflow-y: hidden;
   }
 
+  /* Устанавливаем отступы для header */
   header {
     margin: 3.2rem 3.2rem 0;
   }
 
+  /* Скрываем ссылки в header */
   header .header-links .header-link {
     display: none;
   }
 
+  /* Уменьшаем размер шрифта для кнопки "Присоединяйтесь к нам" */
   header .header-links .header-join-us a {
     font-size: 1.8rem;
   }
 
+  /* Настраиваем отображение бургер-меню */
   header .header-links .burger-menu-con {
     display: flex;
     justify-content: end;
     height: 100%;
   }
 
+  /* Стили для кнопки бургер-меню */
   header .header-links .burger-menu-con .burger-button {
     border: none;
     outline: none;
@@ -119,6 +142,7 @@ main {
     cursor: pointer;
   }
 
+  /* Стили для выпадающего меню бургер-меню */
   header .header-links .burger-menu-con .burger-menu-nav {
     position: fixed;
     right: -300px;
@@ -131,10 +155,12 @@ main {
     transition: right 0.3s linear;
   }
 
+  /* Открытое состояние бургер-меню */
   header .header-links .burger-menu-con .burger-menu-nav.open {
     right: 0;
   }
 
+  /* Активное состояние затемнения фона */
   header .header-links .burger-menu-con .mobile-overlay.active {
     visibility: visible;
     opacity: 1;
@@ -144,6 +170,7 @@ main {
     z-index: 180;
   }
 
+  /* Стили для навигации внутри бургер-меню */
   header .header-links .burger-menu-con .burger-menu-nav nav {
     display: flex;
     flex-direction: column;
@@ -151,11 +178,13 @@ main {
     height: 50%;
   }
 
+  /* Стили для изображений в навигации бургер-меню */
   header .header-links .burger-menu-con .burger-menu-nav nav img {
     max-width: 3rem;
     cursor: pointer;
   }
 
+  /* Стили для ссылок в навигации бургер-меню */
   header .header-links .burger-menu-con .burger-menu-nav nav a {
     font-size: 2rem;
     font-weight: 700;
@@ -164,18 +193,22 @@ main {
     transition: 0.3s linear;
   }
 
+  /* Ховер-эффект для ссылок в бургер-меню */
   header .header-links .burger-menu-con .burger-menu-nav nav a:hover {
     color: hotpink;
   }
 
+  /* Уменьшаем размер шрифта для персональных ссылок */
   header .header-links .header-personal a {
     font-size: 1.8rem;
   }
 
+  /* Устанавливаем максимальную ширину для изображений профиля */
   header .header-links .header-personal img {
     max-width: 5rem;
   }
 
+  /* Настраиваем отступы и выравнивание для персонального контейнера */
   main .body-personal-container .body-personal-bg {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -186,6 +219,7 @@ main {
     gap: 1rem;
   }
 
+  /* Устанавливаем высоту для полей ввода в персональном разделе */
   main
     .body-personal-container
     .body-personal-bg
@@ -196,6 +230,7 @@ main {
     height: 47px;
   }
 
+  /* Уменьшаем размер шрифта для текста в персональном разделе */
   main
     .body-personal-container
     .body-personal-bg
@@ -204,43 +239,53 @@ main {
     font-size: 1.2rem;
   }
 
+  /* Скрываем раздел скин-персонализации */
   .body-personal-skin-con {
     display: none;
   }
 
+  /* Переключаем flex-ориентацию для основного контента */
   main .body-main-content {
     flex-direction: column;
     margin-top: 3rem;
   }
 
+  /* Центрируем элементы социальных сетей */
   main .body-main-content .body-main-social-items {
     margin: 3rem 0 3rem;
     flex-direction: row;
     justify-content: center;
   }
 
+  /* Уменьшаем размер заголовка в main */
   main .body-main-title h1 {
     font-size: 5rem;
   }
 }
 
+/* Экран до 767px (смартфоны в альбомной ориентации) */
 @media screen and (max-width: 767px) {
+  /* Устанавливаем отступы для header */
   header {
     margin: 1.2rem 1.2rem 0;
   }
 
+  /* Уменьшаем отступы для main */
   main {
     padding: 0 1.2rem;
   }
 
+  /* Настраиваем отступы для фона регистрации */
   main .body-registration-container .body-registration-bg {
     padding: 3rem;
   }
 
+  /* Настраиваем отступы для контейнера регистрации */
   main .body-registration-container .body-registration-bg .body-registration {
     padding: 3rem;
   }
 
+  /* Устанавливаем нижний отступ для заголовков в регистрации */
   main
     .body-registration-container
     .body-registration-bg
@@ -249,9 +294,12 @@ main {
     padding-bottom: 3.6rem;
   }
 
+  /* Уменьшаем размер заголовка в main */
   main .body-main-title h1 {
     font-size: 2.5rem;
   }
+
+  /* Уменьшаем размер заголовков в регистрации */
   main
     .body-registration-container
     .body-registration-bg
@@ -260,6 +308,7 @@ main {
     font-size: 1.5rem;
   }
 
+  /* Уменьшаем размер текста в полях ввода */
   main
     .body-registration-container
     .body-registration-bg
@@ -269,6 +318,7 @@ main {
     font-size: 1.5rem;
   }
 
+  /* Устанавливаем ширину и высоту для полей ввода */
   main
     .body-registration-container
     .body-registration-bg
@@ -280,6 +330,7 @@ main {
     font-size: 1.2rem;
   }
 
+  /* Уменьшаем размер ссылок в регистрации */
   main
     .body-registration-container
     .body-registration-bg
@@ -289,10 +340,12 @@ main {
     font-size: 1.2rem;
   }
 
+  /* Уменьшаем размер текста в абзацах */
   p {
     font-size: 1.8rem;
   }
 
+  /* Устанавливаем ширину для полей ввода в персональном разделе */
   main
     .body-personal-container
     .body-personal-bg
@@ -303,6 +356,7 @@ main {
     width: 200px;
   }
 
+  /* Устанавливаем размеры для персонального раздела */
   main
     .body-personal-container
     .body-personal-bg
@@ -311,10 +365,4 @@ main {
     width: 300px;
     height: 350px;
   }
-}
-
-@media screen and (max-width: 560px) {
-}
-
-@media screen and (max-width: 380px) {
 }
