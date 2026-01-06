@@ -21,7 +21,8 @@ main .body-main-title p {
 main .body-main-content {
   display: flex;
   justify-content: space-between;
-  margin-top: 8rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 main .body-main-content .body-main-social-items {
