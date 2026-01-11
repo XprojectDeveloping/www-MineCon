@@ -5,6 +5,7 @@ main .body-registration-container {
   justify-content: center; /* Центрируем элементы по горизонтали */
   align-items: center; /* Центрируем элементы по вертикали */
   margin-top: 2.8rem; /* Отступ сверху */
+  margin-bottom: 2.8rem; /* Отступ снизу */
 }
 
 /* Блок регистрации */
@@ -81,4 +82,27 @@ main .body-registration-container .body-registration button {
 main .body-registration-container .body-registration button:hover {
   background-color: #ffc0cb; /* Цвет фона при наведении */
   color: #ffffff; /* Цвет текста при наведении */
+}
+
+main .body-registration-container .body-registration .body-registration-title {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+main
+  .body-registration-container
+  .body-registration
+  .body-registration-title
+  a {
+  color: white;
+}
+
+main
+  .body-registration-container
+  .body-registration
+  .body-registration-title
+  a:hover {
+  color: #ffc0cb;
 }
