@@ -1,0 +1,70 @@
+/* Секция заголовка для правил */
+main .body-rules-title {
+  display: flex; /* Устанавливаем флекс-контейнер */
+  flex-direction: column; /* Расположение элементов в колонку */
+  justify-content: center; /* Центрирование по вертикали */
+  align-items: center; /* Центрирование по горизонтали */
+  margin-top: 8rem; /* Отступ сверху */
+}
+
+/* Заголовок правил */
+main .body-rules-title h2 {
+  font-size: 6rem; /* Размер шрифта заголовка */
+  color: #ffffff; /* Белый цвет текста */
+  font-weight: 700; /* Жирный шрифт */
+  margin-bottom: 1rem; /* Отступ снизу */
+}
+
+/* Подзаголовок правил */
+main .body-rules-title p {
+  font-size: 3rem; /* Размер шрифта подзаголовка */
+  color: #ffffff; /* Белый цвет текста */
+  font-weight: 700; /* Жирный шрифт */
+}
+
+/* Контейнер для карточек правил */
+main .body-rules-cards {
+  margin-top: 8rem; /* Отступ сверху */
+  display: grid; /* Устанавливаем сетку */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(150px, 1fr)
+  ); /* Адаптивная сетка карточек */
+  gap: 3rem; /* Расстояние между карточками */
+}
+
+/* Карточка правила */
+main .body-rules-cards .body-rules-card {
+  backdrop-filter: blur(7px); /* Размытие фона */
+  background-color: #00000080; /* Полупрозрачный черный фон */
+  padding: 3rem; /* Внутренние отступы */
+  border-radius: 3rem; /* Скругление углов */
+}
+
+/* Заголовок карточки правила */
+main .body-rules-cards .body-rules-card .body-rules-card-title {
+  display: flex; /* Устанавливаем флекс-контейнер */
+  align-items: center; /* Центрирование элементов по вертикали */
+  margin-bottom: 3rem; /* Отступ снизу */
+}
+
+/* Изображение в заголовке карточки */
+main .body-rules-cards .body-rules-card .body-rules-card-title img {
+  max-width: 5rem; /* Максимальная ширина изображения */
+  padding-right: 1.3rem; /* Отступ справа */
+}
+
+/* Текст заголовка карточки */
+main .body-rules-cards .body-rules-card .body-rules-card-title h3 {
+  text-align: center; /* Центрирование текста */
+  font-size: 2rem; /* Размер шрифта */
+  color: white; /* Белый цвет текста */
+}
+
+/* Список правил внутри карточки */
+main .body-rules-cards .body-rules-card ul li {
+  list-style-type: disc; /* Тип маркера списка */
+  margin-bottom: 1rem; /* Отступ снизу */
+  font-size: 1.8rem; /* Размер шрифта */
+  color: #ffffff; /* Белый цвет текста */
+}

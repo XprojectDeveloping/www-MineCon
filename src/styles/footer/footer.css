@@ -1,9 +1,11 @@
+/* Контейнер для футера */
 footer .footer-container {
-  margin: 4.1rem 0 2.1rem;
+  margin: 4.1rem 0 2.1rem; /* Отступы сверху и снизу */
 }
 
+/* Текст внутри футера */
 footer .footer-container p {
-  text-align: center;
-  font-size: 1.8rem;
-  color: white;
+  text-align: center; /* Центрирование текста */
+  font-size: 1.8rem; /* Размер шрифта */
+  color: white; /* Белый цвет текста */
 }

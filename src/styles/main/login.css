@@ -11,6 +11,7 @@ main .body-login-container {
 /* Блок авторизации */
 main .body-login-container .body-login {
   backdrop-filter: blur(7px); /* Размытие фона */
+  background-color: #00000080; /* Черный фон */
   padding: 5rem; /* Внутренние отступы */
   border-radius: 30px; /* Скругление углов */
   display: flex; /* Устанавливаем флекс-контейнер */

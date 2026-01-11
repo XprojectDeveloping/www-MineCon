@@ -8,6 +8,7 @@
 @import url("./main/registration.css"); /* Стили для страницы регистрации */
 @import url("./main/login.css"); /* Стили для страницы авторизации */
 @import url("./main/personal.css"); /* Стили для персонального кабинета */
+@import url("./main/rules.css"); /* Стили для правил */
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic); /* Шрифт всего проекта */
 
 /* Основные стили для body */
@@ -113,7 +114,8 @@ main {
   header .header-links .burger-menu-con .burger-menu-nav {
     position: fixed; /* Фиксированное положение */
     right: -300px; /* Начальное положение справа */
-    background: #ffc0cb; /* Розовый фон */
+    backdrop-filter: blur(7px); /* Размытие фона */
+    background-color: #00000080; /* Черный фон */
     top: 0; /* Верхний край */
     padding: 3rem; /* Внутренние отступы */
     width: 300px; /* Ширина меню */
@@ -212,6 +214,30 @@ main {
 
   main .body-main-title h1 {
     font-size: 5rem; /* Размер заголовка */
+  }
+
+  /* Секция заголовка для правил */
+  main .body-rules-title {
+    margin-top: 3rem; /* Отступ сверху для заголовка */
+  }
+
+  /* Заголовок правил */
+  main .body-rules-title h2 {
+    font-size: 3rem; /* Размер шрифта заголовка */
+  }
+
+  /* Подзаголовок правил */
+  main .body-rules-title p {
+    font-size: 2.5rem; /* Размер шрифта подзаголовка */
+  }
+
+  /* Контейнер для карточек правил */
+  main .body-rules-cards {
+    margin-top: 3rem; /* Отступ сверху для карточек */
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(350px, 1fr)
+    ); /* Адаптивная сетка карточек */
   }
 
   footer .footer-container {
