@@ -61,6 +61,7 @@ main .body-login-container .body-login .body-login-btn button {
   padding: 1rem; /* Внутренние отступы */
   cursor: pointer; /* Курсор указателя */
   transition: 0.3s linear; /* Анимация при наведении */
+  padding: 1rem 4rem; /* Отступ для кнопки слева и справа сверху и снизу */
 }
 
 /* Ховер-эффект для кнопки авторизации */
