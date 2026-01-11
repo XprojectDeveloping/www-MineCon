@@ -1,32 +1,32 @@
-/* Основной контейнер личного кабинета */
+/* Основной контейнер для личного кабинета */
 main .body-personal-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 4.1rem;
-  margin-bottom: 4.1rem;
+  max-width: 1200px; /* Максимальная ширина контейнера */
+  margin: 0 auto; /* Центрирование контейнера */
+  margin-top: 4.1rem; /* Отступ сверху */
+  margin-bottom: 4.1rem; /* Отступ снизу */
 }
 
 /* Фон и структура блока личного кабинета */
 main .body-personal-container .body-personal-bg {
-  background-color: #00000080;
-  border-radius: 3rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  padding-left: 12rem;
-  padding-right: 12rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 9.5rem;
+  background-color: #00000080; /* Полупрозрачный черный фон */
+  border-radius: 3rem; /* Скругление углов */
+  padding-top: 5rem; /* Внутренний отступ сверху */
+  padding-bottom: 5rem; /* Внутренний отступ снизу */
+  padding-left: 12rem; /* Внутренний отступ слева */
+  padding-right: 12rem; /* Внутренний отступ справа */
+  display: flex; /* Устанавливаем флекс-контейнер */
+  flex-direction: row; /* Расположение элементов в строку */
+  justify-content: center; /* Центрирование элементов по горизонтали */
+  gap: 9.5rem; /* Расстояние между элементами */
 }
 
 /* Заголовок блока "Ваш скин" */
 main .body-personal-container .body-personal-bg .body-personal-skin-con p {
-  text-align: center;
-  padding-bottom: 2rem;
-  font-size: 2.4rem;
-  color: #ffffff;
-  line-height: 100%;
+  text-align: center; /* Центрирование текста */
+  padding-bottom: 2rem; /* Отступ снизу */
+  font-size: 2.4rem; /* Размер шрифта */
+  color: #ffffff; /* Белый цвет текста */
+  line-height: 100%; /* Межстрочный интервал */
 }
 
 /* Блок отображения скина пользователя */
@@ -35,10 +35,10 @@ main
   .body-personal-bg
   .body-personal-skin-con
   .body-personal-skin {
-  background-color: #00000099;
-  border-radius: 3rem;
-  width: 435px;
-  height: 344px;
+  background-color: #00000099; /* Полупрозрачный черный фон */
+  border-radius: 3rem; /* Скругление углов */
+  width: 435px; /* Ширина блока */
+  height: 344px; /* Высота блока */
 }
 
 /* Заголовок блока смены пароля */
@@ -47,11 +47,11 @@ main
   .body-personal-bg
   .body-personal-password-change-con
   p {
-  text-align: center;
-  padding-bottom: 2rem;
-  font-size: 2.4rem;
-  color: #ffffff;
-  line-height: 100%;
+  text-align: center; /* Центрирование текста */
+  padding-bottom: 2rem; /* Отступ снизу */
+  font-size: 2.4rem; /* Размер шрифта */
+  color: #ffffff; /* Белый цвет текста */
+  line-height: 100%; /* Межстрочный интервал */
 }
 
 /* Контейнер для смены пароля */
@@ -59,8 +59,8 @@ main
   .body-personal-container
   .body-personal-bg
   .body-personal-password-change-con {
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Устанавливаем флекс-контейнер */
+  flex-direction: column; /* Расположение элементов в колонку */
 }
 
 /* Фон и структура формы смены пароля */
@@ -69,10 +69,10 @@ main
   .body-personal-bg
   .body-personal-password-change-con
   .body-personal-password-change {
-  background-color: #00000099;
-  border-radius: 3rem;
-  width: 434px;
-  height: 443px;
+  background-color: #00000099; /* Полупрозрачный черный фон */
+  border-radius: 3rem; /* Скругление углов */
+  width: 434px; /* Ширина формы */
+  height: 443px; /* Высота формы */
 }
 
 /* Внутренние элементы формы смены пароля */
@@ -82,11 +82,11 @@ main
   .body-personal-password-change-con
   .body-personal-password-change
   .form-inputs {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 2.8rem;
+  display: flex; /* Устанавливаем флекс-контейнер */
+  flex-direction: column; /* Расположение элементов в колонку */
+  justify-content: center; /* Центрирование элементов по вертикали */
+  align-items: center; /* Центрирование элементов по горизонтали */
+  padding-top: 2.8rem; /* Внутренний отступ сверху */
 }
 
 /* Поля ввода в форме смены пароля */
@@ -97,32 +97,32 @@ main
   .body-personal-password-change
   .form-inputs
   input {
-  border: none;
-  outline: none;
-  border-radius: 3rem;
-  width: 370px;
-  height: 65px;
-  margin-bottom: 1.7rem;
-  text-align: center;
-  font-size: 1.9rem;
+  border: none; /* Убираем рамку */
+  outline: none; /* Убираем обводку */
+  border-radius: 3rem; /* Скругление углов */
+  width: 370px; /* Ширина поля */
+  height: 65px; /* Высота поля */
+  margin-bottom: 1.7rem; /* Отступ снизу */
+  text-align: center; /* Центрирование текста */
+  font-size: 1.9rem; /* Размер шрифта */
 }
 
 /* Контейнер для кнопки смены пароля */
 main .body-personal-container .body-personal-password-change-button {
-  display: flex;
-  justify-content: center;
+  display: flex; /* Устанавливаем флекс-контейнер */
+  justify-content: center; /* Центрирование кнопки */
 }
 
 /* Кнопка смены пароля */
 main .body-personal-container .body-personal-password-change-button button {
-  border: none;
-  outline: none;
-  padding: 1rem;
-  cursor: pointer;
-  border-radius: 3rem;
-  padding: 1rem 4rem;
-  transition: 0.3s linear;
-  margin-top: 1rem;
+  border: none; /* Убираем рамку */
+  outline: none; /* Убираем обводку */
+  padding: 1rem; /* Внутренние отступы */
+  cursor: pointer; /* Курсор указателя */
+  border-radius: 3rem; /* Скругление углов */
+  padding: 1rem 4rem; /* Внутренние отступы по горизонтали и вертикали */
+  transition: 0.3s linear; /* Анимация при наведении */
+  margin-top: 1rem; /* Отступ сверху */
 }
 
 /* Эффект при наведении на кнопку смены пароля */
@@ -130,6 +130,6 @@ main
   .body-personal-container
   .body-personal-password-change-button
   button:hover {
-  background-color: #ffc0cb;
-  color: white;
+  background-color: #ffc0cb; /* Цвет фона при наведении */
+  color: white; /* Цвет текста при наведении */
 }

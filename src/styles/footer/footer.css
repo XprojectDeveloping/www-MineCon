@@ -1,0 +1,9 @@
+footer .footer-container {
+  margin: 4.1rem 0 2.1rem;
+}
+
+footer .footer-container p {
+  text-align: center;
+  font-size: 1.8rem;
+  color: white;
+}

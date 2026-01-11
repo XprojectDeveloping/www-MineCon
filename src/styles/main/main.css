@@ -1,0 +1,80 @@
+/* Секция заголовка на главной странице */
+main .body-main-title {
+  margin-top: 2.7rem; /* Отступ сверху для заголовка */
+}
+
+/* Основной заголовок страницы */
+main .body-main-title h1 {
+  font-weight: 700; /* Жирный шрифт */
+  font-size: 6rem; /* Размер шрифта */
+  line-height: 100%; /* Межстрочный интервал */
+  color: #fff; /* Белый цвет текста */
+  margin-bottom: 2.5rem; /* Отступ снизу */
+}
+
+/* Подзаголовок страницы */
+main .body-main-title p {
+  font-weight: 700; /* Жирный шрифт */
+  font-size: 2rem; /* Размер шрифта */
+  line-height: 100%; /* Межстрочный интервал */
+  color: #fff; /* Белый цвет текста */
+  margin-bottom: 3rem; /* Отступ снизу */
+}
+
+/* Основной контейнер для контента */
+main .body-main-content {
+  display: flex; /* Устанавливаем флекс-контейнер */
+  justify-content: space-between; /* Распределение элементов по горизонтали */
+  margin-top: 3rem; /* Отступ сверху */
+  margin-bottom: 2rem; /* Отступ снизу */
+}
+
+/* Контейнер для социальных ссылок */
+main .body-main-content .body-main-social-items {
+  display: flex; /* Устанавливаем флекс-контейнер */
+  flex-direction: column-reverse; /* Обратный порядок элементов */
+  gap: 2.5rem; /* Расстояние между элементами */
+}
+
+/* Элемент социальной ссылки */
+main .body-main-content .body-main-social-items .body-main-social-item {
+  transition: 0.3s linear; /* Анимация при наведении */
+}
+
+/* Эффект при наведении на социальную ссылку */
+main .body-main-content .body-main-social-items .body-main-social-item:hover {
+  transform: scale(1.03); /* Увеличение элемента */
+}
+
+/* Стили для кнопки */
+.pushable {
+  background: #2e9635; /* Основной цвет кнопки */
+  border-radius: 12px; /* Скругление углов */
+  border: none; /* Убираем рамку */
+  padding: 0; /* Убираем внутренние отступы */
+  cursor: pointer; /* Курсор указателя */
+  outline-offset: 4px; /* Смещение обводки */
+  outline: none; /* Убираем обводку */
+}
+
+/* Эффект при наведении на кнопку */
+.pushable:hover {
+  background: #34bd37; /* Изменение цвета при наведении */
+}
+
+/* Внутренний блок кнопки */
+.front {
+  display: block; /* Блочный элемент */
+  padding: 12px 42px; /* Внутренние отступы */
+  border-radius: 12px; /* Скругление углов */
+  font-size: 2rem; /* Размер шрифта */
+  font-weight: 700; /* Жирный шрифт */
+  background: #9bd25a; /* Цвет фона */
+  color: white; /* Цвет текста */
+  transform: translateY(-6px); /* Смещение по оси Y */
+}
+
+/* Эффект при нажатии на кнопку */
+.pushable:active .front {
+  transform: translateY(-2px); /* Изменение смещения при нажатии */
+}

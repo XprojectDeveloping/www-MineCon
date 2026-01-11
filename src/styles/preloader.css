@@ -1,34 +1,34 @@
 /* Отключение прокрутки страницы при активном прелоадере */
 html.hidden {
-  overflow: hidden;
+  overflow: hidden; /* Блокировка прокрутки */
 }
 
 /* Основной контейнер прелоадера */
 .pre-loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  overflow: hidden;
-  transition: 0.3s linear;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  backdrop-filter: blur(15px);
-  z-index: 100;
+  display: flex; /* Устанавливаем флекс-контейнер */
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+  min-height: 100vh; /* Минимальная высота на весь экран */
+  overflow: hidden; /* Отключение прокрутки внутри контейнера */
+  transition: 0.3s linear; /* Анимация появления/скрытия */
+  position: fixed; /* Фиксированное положение */
+  top: 0; /* Привязка к верхнему краю */
+  left: 0; /* Привязка к левому краю */
+  right: 0; /* Привязка к правому краю */
+  backdrop-filter: blur(15px); /* Размытие фона */
+  z-index: 100; /* Порядок наложения */
 }
 
 /* Скрытие прелоадера */
 .pre-loader.hidden {
-  opacity: 0;
-  visibility: hidden;
+  opacity: 0; /* Прозрачность */
+  visibility: hidden; /* Скрытие элемента */
 }
 
 /* Анимация загрузки */
 .pre-loader .loader {
-  height: 150px;
-  width: 150px;
-  background: url("../img/ponyRun.gif") no-repeat center center;
-  background-size: contain;
+  height: 150px; /* Высота анимации */
+  width: 150px; /* Ширина анимации */
+  background: url("../img/ponyRun.gif") no-repeat center center; /* Фоновое изображение */
+  background-size: contain; /* Масштабирование изображения */
 }

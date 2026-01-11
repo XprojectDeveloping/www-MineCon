@@ -1,36 +1,36 @@
-/* Основной контейнер карусели */
+/* Контейнер для карусели */
 .multi-carousel {
-  position: relative;
-  max-width: 1000px;
-  overflow: hidden;
-  border-radius: 16px;
+  position: relative; /* Относительное позиционирование для управления дочерними элементами */
+  max-width: 1000px; /* Максимальная ширина карусели */
+  overflow: hidden; /* Скрытие элементов за пределами контейнера */
+  border-radius: 16px; /* Скругление углов */
 }
 
 /* Карточка внутри карусели */
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 6rem;
-  background-color: #00000059;
-  border-radius: 16px;
-  overflow: hidden;
-  transition: transform 0.3s;
-  padding: 2.2rem;
-  height: 100%;
+  display: flex; /* Устанавливаем флекс-контейнер */
+  flex-direction: column; /* Расположение элементов в колонку */
+  justify-content: space-between; /* Равномерное распределение элементов */
+  gap: 6rem; /* Расстояние между элементами */
+  background-color: #00000059; /* Полупрозрачный черный фон */
+  border-radius: 16px; /* Скругление углов */
+  overflow: hidden; /* Скрытие элементов за пределами карточки */
+  transition: transform 0.3s; /* Анимация при изменении трансформации */
+  padding: 2.2rem; /* Внутренние отступы */
+  height: 100%; /* Высота карточки */
 }
 
 /* Текст внутри карточки */
 .card p {
-  color: #ffffff;
-  font-size: 2.4rem;
-  font-weight: 300;
-  line-height: 100%;
+  color: #ffffff; /* Белый цвет текста */
+  font-size: 2.4rem; /* Размер шрифта */
+  font-weight: 300; /* Толщина шрифта */
+  line-height: 100%; /* Межстрочный интервал */
 }
 
 /* Изображение внутри карточки */
 .card .card-img img {
-  width: 100%;
-  object-fit: cover;
-  height: 100%;
+  width: 100%; /* Ширина изображения */
+  object-fit: cover; /* Обрезка изображения по размеру контейнера */
+  height: 100%; /* Высота изображения */
 }

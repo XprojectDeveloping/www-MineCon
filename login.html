@@ -22,7 +22,7 @@
   <!-- Фон всего сайта -->
   <body
     style="
-      background-image: url(./src/img/body-bg-img2.png);
+      background-image: url(./src/img/body-bg-img.png);
       background-repeat: no-repeat;
       background-size: cover;
     "
@@ -48,7 +48,7 @@
         <!-- Ссылки для входа и регистрации -->
         <div class="header-join-us">
           <a href="./logon.html">Войти</a>
-          <a href="./regist.html">Регистрация</a>
+          <a href="./registration.html">Регистрация</a>
         </div>
 
         <!-- Бургер-меню для мобильных устройств -->
@@ -70,7 +70,7 @@
               <a href="javaScript:void()" aria-label="Скачать лаунчер"
                 >Скачать лаунчер</a
               >
-              <a href="javaScript:void()" aria-label="Новости">Новости</a>
+              <a href="javaScript" aria-label="Новости">Новости</a>
               <a href="javaScript:void()" aria-label="Магазин">Магазин</a>
               <a href="javaScript:void()" aria-label="Правила">Правила</a>
               <a href="javaScript:void()" aria-label="Гайды">Гайды</a>
@@ -83,59 +83,29 @@
     <!-- Основной контент страницы -->
     <main>
       <!-- Форма авторизации -->
-      <div class="body-registration-container">
-        <div class="body-registration-bg">
-          <div class="body-registration">
-            <h3>Авторизация</h3>
-            <div class="form-inputs">
-              <!-- Поле ввода логина -->
+      <div class="body-login-container">
+        <div class="body-login">
+          <h2>Войти</h2>
+
+          <form>
+            <div class="body-login-inputs">
               <p>Логин</p>
-              <input type="text" />
-
-              <!-- Поле ввода пароля -->
+              <input name="login" type="text" />
               <p>Пароль</p>
-              <input type="password" />
-
-              <!-- Чекбокс "запомнить меня" -->
-              <div class="inputCheckBox">
-                <input class="check" type="checkbox" />
-                <p>запомнить меня</p>
-              </div>
-
-              <!-- Кнопка авторизации -->
-              <div class="logonButton">
-                <button name="button" type="button">Авторизация</button>
-              </div>
-
-              <!-- Ссылки на регистрацию и восстановление пароля -->
-              <div class="input-links">
-                <a href="./regist.html">Регистрация</a>
-                <a href="javaScript:void()">Забыл пароль</a>
-              </div>
+              <input name="password" type="password" />
             </div>
-          </div>
-        </div>
 
+            <div class="body-login-links">
+              <a href="./registration.html">Регистрация</a>
+              <a href="javaScript:Void()">Забыл пароль</a>
+            </div>
+
+            <div class="body-login-btn">
+              <button type="submit">Войти</button>
+            </div>
+          </form>
+        </div>
         <!-- Ссылки на социальные сети -->
-        <div class="body-registration-social-container">
-          <div class="body-registration-social-items">
-            <div class="body-main-social-item">
-              <a href="javaScript:void()">
-                <img src="./src/img/body-icon-wk-img.svg" alt="wk" />
-              </a>
-            </div>
-            <div class="body-registration-social-item">
-              <a href="javaScript:void()">
-                <img src="./src/img/body-icon-discord-img.svg" alt="wk" />
-              </a>
-            </div>
-            <div class="body-registration-social-item">
-              <a href="javaScript:void()">
-                <img src="./src/img/body-icon-telegram-img.svg" alt="wk" />
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
     </main>
 

@@ -22,7 +22,7 @@
   <!-- Фон всего сайта -->
   <body
     style="
-      background-image: url(./src/img/body-bg-img2.png);
+      background-image: url(./src/img/body-bg-img.png);
       background-repeat: no-repeat;
       background-size: cover;
     "
@@ -47,8 +47,8 @@
 
         <!-- Ссылки для входа и регистрации -->
         <div class="header-join-us">
-          <a href="./logon.html">Войти</a>
-          <a href="/regist.html">Регистрация</a>
+          <a href="./login.html">Войти</a>
+          <a href="/registration.html">Регистрация</a>
         </div>
 
         <!-- Бургер-меню для мобильных устройств -->
@@ -82,55 +82,29 @@
 
     <!-- Основной контент страницы -->
     <main>
+      <!-- Форма регистрации контент страницы -->
       <div class="body-registration-container">
-        <div class="body-registration-bg">
-          <div class="body-registration">
-            <h3>Регистрация</h3>
-            <div class="form-inputs">
-              <!-- Поле ввода логина -->
+        <div class="body-registration">
+          <h2>Регистрация</h2>
+
+          <form>
+            <div class="body-registration-inputs">
               <p>Логин</p>
               <input name="login" type="text" />
-
-              <!-- Поле ввода почты -->
               <p>Почта</p>
               <input name="email" type="email" />
-
-              <!-- Поле ввода пароля -->
               <p>Пароль</p>
               <input name="password" type="password" />
-
-              <!-- Поле ввода ника пригласившего -->
               <p>Ник пригласившего</p>
-              <input name="nick" type="text" />
-            </div>
+              <input name="reference" type="text" />
 
-            <!-- Кнопка для завершения регистрации -->
-            <div class="buttons">
-              <button type="submit">Зарегистрироваться</button>
+              <div class="body-registration-btn">
+                <button type="submit">Зарегистрироваться</button>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
-
         <!-- Ссылки на социальные сети -->
-        <div class="body-registration-social-container">
-          <div class="body-registration-social-items">
-            <div class="body-main-social-item">
-              <a href="javaScript:void()">
-                <img src="./src/img/body-icon-wk-img.svg" alt="wk" />
-              </a>
-            </div>
-            <div class="body-registration-social-item">
-              <a href="javaScript:void()">
-                <img src="./src/img/body-icon-discord-img.svg" alt="wk" />
-              </a>
-            </div>
-            <div class="body-registration-social-item">
-              <a href="javaScript:void()">
-                <img src="./src/img/body-icon-telegram-img.svg" alt="wk" />
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
     </main>
 

@@ -1,43 +1,43 @@
-/* Сброс отступов и боксовой модели для всех элементов */
+/* Универсальный сброс отступов и боксовой модели */
 *,
 *::before,
 *::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+  padding: 0; /* Убираем внутренние отступы */
+  margin: 0; /* Убираем внешние отступы */
+  box-sizing: border-box; /* Устанавливаем боксовую модель */
 }
 
-/* Базовый размер шрифта и плавное поведение прокрутки */
+/* Базовые настройки для HTML */
 html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
+  font-size: 62.5%; /* Устанавливаем базовый размер шрифта */
+  scroll-behavior: smooth; /* Плавная прокрутка */
 }
 
 /* Основной шрифт для тела страницы */
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif; /* Устанавливаем шрифт */
 }
 
 /* Сброс стилей для списков */
 ul,
 li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  list-style: none; /* Убираем маркеры списка */
+  padding: 0; /* Убираем внутренние отступы */
+  margin: 0; /* Убираем внешние отступы */
 }
 
 /* Сброс стилей для абзацев */
 p {
-  margin: 0;
-  padding: 0;
+  margin: 0; /* Убираем внешние отступы */
+  padding: 0; /* Убираем внутренние отступы */
 }
 
 /* Сброс стилей для ссылок */
 a {
-  color: black;
-  text-decoration: none;
-  padding: 0;
-  margin: 0;
+  color: black; /* Устанавливаем черный цвет текста */
+  text-decoration: none; /* Убираем подчеркивание */
+  padding: 0; /* Убираем внутренние отступы */
+  margin: 0; /* Убираем внешние отступы */
 }
 
 /* Сброс стилей для заголовков */
@@ -47,27 +47,27 @@ h3,
 h4,
 h5,
 h6 {
-  padding: 0;
-  margin: 0;
-  font-weight: normal;
+  padding: 0; /* Убираем внутренние отступы */
+  margin: 0; /* Убираем внешние отступы */
+  font-weight: normal; /* Устанавливаем нормальную толщину шрифта */
 }
 
 /* Стили для полосы прокрутки */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 10px; /* Ширина полосы прокрутки */
 }
 
 /* Фон трека полосы прокрутки */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #f1f1f1; /* Цвет трека */
 }
 
 /* Цвет полосы прокрутки */
 ::-webkit-scrollbar-thumb {
-  background: #ffc0cb;
+  background: #ffc0cb; /* Основной цвет полосы */
 }
 
 /* Цвет полосы прокрутки при наведении */
 ::-webkit-scrollbar-thumb:hover {
-  background: #fc788e;
+  background: #fc788e; /* Цвет полосы при наведении */
 }
