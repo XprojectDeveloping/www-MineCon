@@ -1,10 +1,10 @@
-/* Секция заголовка для правил */
 main .body-rules-title {
   display: flex; /* Устанавливаем флекс-контейнер */
   flex-direction: column; /* Расположение элементов в колонку */
   justify-content: center; /* Центрирование по вертикали */
   align-items: center; /* Центрирование по горизонтали */
   margin-top: 8rem; /* Отступ сверху */
+  margin-bottom: 6rem;
 }
 
 /* Заголовок правил */
@@ -22,49 +22,56 @@ main .body-rules-title p {
   font-weight: 700; /* Жирный шрифт */
 }
 
-/* Контейнер для карточек правил */
-main .body-rules-cards {
-  margin-top: 8rem; /* Отступ сверху */
-  display: grid; /* Устанавливаем сетку */
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(150px, 1fr)
-  ); /* Адаптивная сетка карточек */
-  gap: 3rem; /* Расстояние между карточками */
+main .accordion-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-/* Карточка правила */
-main .body-rules-cards .body-rules-card {
-  backdrop-filter: blur(7px); /* Размытие фона */
-  background-color: #00000080; /* Полупрозрачный черный фон */
-  padding: 3rem; /* Внутренние отступы */
-  border-radius: 3rem; /* Скругление углов */
+main .accordion-container .accordion-block .accordion {
+  background-color: #00000080;
+  border-radius: 30px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 1.5rem;
 }
 
-/* Заголовок карточки правила */
-main .body-rules-cards .body-rules-card .body-rules-card-title {
-  display: flex; /* Устанавливаем флекс-контейнер */
-  align-items: center; /* Центрирование элементов по вертикали */
-  margin-bottom: 3rem; /* Отступ снизу */
+main .accordion-container .accordion-block .panel {
+  border-radius: 30px;
 }
 
-/* Изображение в заголовке карточки */
-main .body-rules-cards .body-rules-card .body-rules-card-title img {
-  max-width: 5rem; /* Максимальная ширина изображения */
-  padding-right: 1.3rem; /* Отступ справа */
+main .accordion-container .accordion-block .panel ol li {
+  list-style-type: disc;
+  padding-bottom: 1rem;
 }
 
-/* Текст заголовка карточки */
-main .body-rules-cards .body-rules-card .body-rules-card-title h3 {
-  text-align: center; /* Центрирование текста */
-  font-size: 2rem; /* Размер шрифта */
-  color: white; /* Белый цвет текста */
+main .accordion-container .accordion-block .panel p {
+  padding-top: 2rem;
 }
 
-/* Список правил внутри карточки */
-main .body-rules-cards .body-rules-card ul li {
-  list-style-type: disc; /* Тип маркера списка */
-  margin-bottom: 1rem; /* Отступ снизу */
-  font-size: 1.8rem; /* Размер шрифта */
-  color: #ffffff; /* Белый цвет текста */
+main .accordion-container .accordion-block .panel ol {
+  padding: 10px 20px;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding-left: 20px;
+  background-color: #000000bc;
+  color: white;
+  font-size: 1.5rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
